@@ -22,8 +22,7 @@ class Monster():
         print('Монстр побежден')
 
 class Fighter():
-    def __init__(self, weapon: Weapon):
-        self.weapon = weapon
+
     def change_weapon(self, weapon: Weapon):
         self.weapon = weapon
         weapon_type = ''
@@ -40,7 +39,7 @@ class Fighter():
 
 s = Sword()
 b = Bow()
-f = Fighter(s)
+f = Fighter()
 m = Monster()
 
 f.change_weapon(s)
