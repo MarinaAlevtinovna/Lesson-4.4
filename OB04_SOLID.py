@@ -4,7 +4,7 @@
 
 from abc import ABC, abstractmethod
 
-class Weapon(ABC):
+class Weapon():
     @abstractmethod
     def attack(self):
         pass
@@ -22,7 +22,6 @@ class Monster():
         print('Монстр побежден')
 
 class Fighter():
-
     def change_weapon(self, weapon: Weapon):
         self.weapon = weapon
         weapon_type = ''
